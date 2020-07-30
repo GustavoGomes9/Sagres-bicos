@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ipe: MyString
+  dk_code: MyString
+  color: MyString
+  flow_rate: MyString
+
+two:
+  ipe: MyString
+  dk_code: MyString
+  color: MyString
+  flow_rate: MyString

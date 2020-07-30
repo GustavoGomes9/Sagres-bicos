@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Bicos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ipe</th>
+      <th>Dk code</th>
+      <th>Color</th>
+      <th>Flow rate</th>
+      <th>Drilling</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bicos.each do |bico| %>
+      <tr>
+        <td><%= bico.ipe %></td>
+        <td><%= bico.dk_code %></td>
+        <td><%= bico.color %></td>
+        <td><%= bico.flow_rate %></td>
+        <td><%= bico.drilling %></td>
+        <td><%= link_to 'Show', bico %></td>
+        <td><%= link_to 'Edit', edit_bico_path(bico) %></td>
+        <td><%= link_to 'Destroy', bico, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bico', new_bico_path %>

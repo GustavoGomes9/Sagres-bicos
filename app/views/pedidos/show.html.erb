@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Data matrix:</strong>
+  <%= @pedido.data_matrix %>
+</p>
+
+<p>
+  <strong>Preco:</strong>
+  <%= @pedido.preco %>
+</p>
+
+<p>
+  <strong>Data fab:</strong>
+  <%= @pedido.data_fab %>
+</p>
+
+<p>
+  <strong>Data pedido:</strong>
+  <%= @pedido.data_pedido %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @pedido.data %>
+</p>
+
+<%= link_to 'Edit', edit_pedido_path(@pedido) %> |
+<%= link_to 'Back', pedidos_path %>

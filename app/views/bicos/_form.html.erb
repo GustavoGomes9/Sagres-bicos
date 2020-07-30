@@ -1,0 +1,42 @@
+<%= form_with(model: bico, local: true) do |form| %>
+  <% if bico.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bico.errors.count, "error") %> prohibited this bico from being saved:</h2>
+
+      <ul>
+      <% bico.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :ipe %>
+    <%= form.text_field :ipe %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dk_code %>
+    <%= form.text_field :dk_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :color %>
+    <%= form.text_field :color %>
+  </div>
+
+  <div class="field">
+    <%= form.label :flow_rate %>
+    <%= form.text_field :flow_rate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :drilling %>
+    <%= form.text_field :drilling %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

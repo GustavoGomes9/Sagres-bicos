@@ -1,0 +1,2 @@
+class Bico < ApplicationRecord
+end

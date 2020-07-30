@@ -1,0 +1,42 @@
+namespace :on do
+task flow: :environment do  #db:drop db:create db:migrate db:seed
+    %x(db:drop)    
+    %x(rails on:add_bicos)
+    end
+    private
+    desc "Cria dados para teste no banco de dados bicos"
+    task add_bicos: :environment do
+        show_spinner("Populando banco") do 
+        bicos = [
+            {
+                ipe: "010",
+                dk_code: "dk.AS52790",
+                color: "azul",
+                flow_rate: "22ml"
+            },
+            {
+                ipe: "007",
+                dk_code: "dk.ER52790",
+                color: "amarelo",
+                flow_rate: "34ml"
+            },
+            {
+                ipe: "009",
+                dk_code: "dk.AS5G534",
+                color: "roxo",
+                flow_rate: "40ml"
+            },
+            {
+                ipe: "017",
+                dk_code: "dk.SA78790",
+                color: "vermelho",
+                flow_rate: "50ml"
+            }           
+        ]
+            bicos.each do |bico|
+                Bico.find_or_create_by!(bico)
+            end
+        end
+    end
+end
+end

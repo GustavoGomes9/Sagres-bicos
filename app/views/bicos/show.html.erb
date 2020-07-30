@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ipe:</strong>
+  <%= @bico.ipe %>
+</p>
+
+<p>
+  <strong>Dk code:</strong>
+  <%= @bico.dk_code %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @bico.color %>
+</p>
+
+<p>
+  <strong>Flow rate:</strong>
+  <%= @bico.flow_rate %>
+</p>
+
+<p>
+  <strong>Drilling:</strong>
+  <%= @bico.drilling %>
+</p>
+
+<%= link_to 'Edit', edit_bico_path(@bico) %> |
+<%= link_to 'Back', bicos_path %>

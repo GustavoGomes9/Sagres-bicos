@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  data_matrix: MyString
+  preco: MyString
+  data_fab: MyString
+  data_pedido: MyString
+  data: 
+
+two:
+  data_matrix: MyString
+  preco: MyString
+  data_fab: MyString
+  data_pedido: MyString
+  data: 

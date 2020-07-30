@@ -69,6 +69,6 @@ class PedidosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def pedido_params
-      params.require(:pedido).permit(:data_matrix, :preco, :data_fab, :data_pedido, :data)
+      params.require(:pedido).permit(:data_matrix, :preco, :data_fab, :data_pedido, :data_entrega)
     end
 end

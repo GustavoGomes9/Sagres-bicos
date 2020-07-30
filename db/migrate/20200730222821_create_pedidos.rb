@@ -3,9 +3,9 @@ class CreatePedidos < ActiveRecord::Migration[5.2]
     create_table :pedidos do |t|
       t.string :data_matrix
       t.string :preco
-      t.string :data_fab
-      t.string :data_pedido
-      t.string :data_entrega
+      t.timestamp :data_fab
+      t.timestamp :data_pedido
+      t.timestamp :data_entrega
 
       t.timestamps
     end

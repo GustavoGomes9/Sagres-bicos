@@ -3,13 +3,13 @@
 one:
   data_matrix: MyString
   preco: MyString
-  data_fab: MyString
-  data_pedido: MyString
-  data: 
+  data_fab: 2020-07-30 19:28:21
+  data_pedido: 2020-07-30 19:28:21
+  data_entrega: 2020-07-30 19:28:21
 
 two:
   data_matrix: MyString
   preco: MyString
-  data_fab: MyString
-  data_pedido: MyString
-  data: 
+  data_fab: 2020-07-30 19:28:21
+  data_pedido: 2020-07-30 19:28:21
+  data_entrega: 2020-07-30 19:28:21

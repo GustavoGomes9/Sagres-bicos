@@ -14,7 +14,7 @@ class PedidosTest < ApplicationSystemTestCase
     visit pedidos_url
     click_on "New Pedido"
 
-    fill_in "Data", with: @pedido.data
+    fill_in "Data entrega", with: @pedido.data_entrega
     fill_in "Data fab", with: @pedido.data_fab
     fill_in "Data matrix", with: @pedido.data_matrix
     fill_in "Data pedido", with: @pedido.data_pedido
@@ -29,7 +29,7 @@ class PedidosTest < ApplicationSystemTestCase
     visit pedidos_url
     click_on "Edit", match: :first
 
-    fill_in "Data", with: @pedido.data
+    fill_in "Data entrega", with: @pedido.data_entrega
     fill_in "Data fab", with: @pedido.data_fab
     fill_in "Data matrix", with: @pedido.data_matrix
     fill_in "Data pedido", with: @pedido.data_pedido

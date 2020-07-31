@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :clientes
   resources :addbico_pedidos
   resources :pedidos
   resources :bicos

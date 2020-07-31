@@ -1,3 +1,3 @@
 class Pedido < ApplicationRecord
-    belongs_to :bicos, optional: true
+    belongs_to :bico, optional: true
 end

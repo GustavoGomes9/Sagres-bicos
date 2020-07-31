@@ -19,7 +19,8 @@
     <% @pedidos.each do |pedido| %>
       <tr>
         <td><%= pedido.data_matrix %></td>
-        <td><%= pedido.bico_id%></td>
+        <td><%= pedido.bico.ipe%></td>
+        <td><%= pedido.preco%></td>
         <td><%= pedido.data_fab %></td>
         <td><%= pedido.data_pedido %></td>
         <td><%= pedido.data_entrega %></td>

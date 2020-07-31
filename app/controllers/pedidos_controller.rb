@@ -1,6 +1,6 @@
 class PedidosController < ApplicationController
   before_action :set_pedido, only: [:show, :edit, :update, :destroy]
-
+  before_action :set_bico_options, only:[:new,:create,:edit,:update]
   # GET /pedidos
   # GET /pedidos.json
   def index
@@ -62,6 +62,9 @@ class PedidosController < ApplicationController
   end
 
   private
+    def set_bico_options
+      @bico_options = Bico.all.pluck(:ipe, :id)
+    end
     # Use callbacks to share common setup or constraints between actions.
     def set_pedido
       @pedido = Pedido.find(params[:id])
@@ -69,6 +72,6 @@ class PedidosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def pedido_params
-      params.require(:pedido).permit(:data_matrix, :preco, :data_fab, :data_pedido, :data_entrega)
+      params.require(:pedido).permit(:data_matrix, :preco, :data_fab, :data_pedido, :data_entrega, :bico_id)
     end
 end

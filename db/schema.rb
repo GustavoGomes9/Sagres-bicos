@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_30_222821) do
+ActiveRecord::Schema.define(version: 2020_07_30_232429) do
 
   create_table "bicos", force: :cascade do |t|
     t.string "ipe"
@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(version: 2020_07_30_222821) do
     t.datetime "data_entrega"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "bico_id"
+    t.index ["bico_id"], name: "index_pedidos_on_bico_id"
   end
 
 end

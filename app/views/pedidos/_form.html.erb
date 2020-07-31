@@ -17,6 +17,11 @@
   </div>
 
   <div class="field">
+  <%= form.label :ipe %>
+  <%= form.select("bico_id", @bico_options, { include_blank: true }) %>
+  </div>
+  
+  <div class="field">
     <%= form.label :preco %>
     <%= form.text_field :preco %>
   </div>
@@ -35,6 +40,7 @@
     <%= form.label :data_entrega %>
     <%= form.datetime_select :data_entrega %>
   </div>
+
 
   <div class="actions">
     <%= form.submit %>

@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th>Data matrix</th>
+      <th>Ipe</th>
       <th>Preco</th>
       <th>Data fab</th>
       <th>Data pedido</th>
@@ -18,7 +19,7 @@
     <% @pedidos.each do |pedido| %>
       <tr>
         <td><%= pedido.data_matrix %></td>
-        <td><%= pedido.preco %></td>
+        <td><%= pedido.bico_id%></td>
         <td><%= pedido.data_fab %></td>
         <td><%= pedido.data_pedido %></td>
         <td><%= pedido.data_entrega %></td>

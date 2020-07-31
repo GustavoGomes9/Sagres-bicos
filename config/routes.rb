@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :addbico_pedidos
   resources :pedidos
   resources :bicos
   get 'home/index'
